@@ -1,0 +1,35 @@
+nsfminer
+    main.cpp
+        main
+        doMiner
+        PoolManager
+        // Start PoolManager
+        PoolManager::p().start();
+
+libpool
+    PoolManager.cpp
+        void PoolManager::start() {
+            store memory_order_relaxed
+            fetch memory_order_relaxed
+            post  rotateConnect
+
+        Farm::f().onSolutionFound([&](const Solution& sol) {
+            p_client->submitSolution(sol);
+
+        p_client->onConnected([&]() {
+            cnote << "Spinning up miners...";
+            Farm::f().start();
+
+        p_client->onWorkReceived([&](WorkPackage const& wp) {
+            Farm::f().setWork(m_currentWp);
+
+        void PoolManager::rotateConnect() {
+            p_client =
+                unique_ptr<PoolClient>(new EthStratumClient(m_Settings.noWorkTimeout, m_Settings.noResponseTimeout));
+
+    PoolClient.h
+        // Sets the connection definition to be used by the client
+        void setConnection(std::shared_ptr<URI> _conn) {
+    
+libpool/stratum
+    EthStratumClient.cpp

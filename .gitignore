@@ -1,0 +1,11 @@
+**/nsfminer.build
+nsfminer.build
+.DS_Store
+build
+_3rdParty
+CMakeFiles
+.vscode
+**/Release
+**/*.build
+CMakeScripts
+**/RelWithDebInfo

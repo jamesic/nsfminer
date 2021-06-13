@@ -1,0 +1,10 @@
+{
+  "name": "nsfminer",
+  "version": "1.3.14+commit.68afdc3c.dirty",
+  "is_prerelease": true,
+  "commit": "68afdc3c34efb738be0b65c4acb4fda81e71a265",
+  "branch": "master",
+  "repo": "https://github.com/jamesic/nsfminer.git",
+  "system_name": "darwin",
+  "system_processor": "x86_64"
+}

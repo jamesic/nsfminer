@@ -379,7 +379,7 @@ void CLMiner::enumDevices(minerMap& _DevicesCollection) {
     for (unsigned int pIdx = 0; pIdx < platforms.size(); pIdx++) {
         string platformName = platforms.at(pIdx).getInfo<CL_PLATFORM_NAME>();
         ClPlatformTypeEnum platformType = ClPlatformTypeEnum::Unknown;
-        if (platformName == "AMD Accelerated Parallel Processing")
+        if (platformName == "AMD Accelerated Parallel Processing" || platformName == "Apple")
             platformType = ClPlatformTypeEnum::Amd;
         else if (platformName == "Clover" || platformName == "Intel Gen OCL Driver")
             platformType = ClPlatformTypeEnum::Clover;
@@ -424,16 +424,19 @@ void CLMiner::enumDevices(minerMap& _DevicesCollection) {
                 }
             } else if (clDeviceType == DeviceTypeEnum::Gpu &&
                        (platformType == ClPlatformTypeEnum::Amd || platformType == ClPlatformTypeEnum::Clover)) {
-                cl_char t[24];
-                if (clGetDeviceInfo(device.get(), 0x4037 /*CL_DEVICE_TOPOLOGY_AMD*/, sizeof(t), &t, NULL) ==
-                    CL_SUCCESS) {
-                    // NOTE" Till we can upgrade to opencl 2.x, there's no way to determine
-                    // the bus domain id. So we plug in a 0!
-                    ostringstream s;
-                    s << "0000:" << setfill('0') << setw(2) << hex << (unsigned int)(t[21]) << ":" << setw(2)
-                      << (unsigned int)(t[22]) << "." << (unsigned int)(t[23]);
-                    uniqueId = s.str();
-                }
+                // cl_char t[24];
+                // if (clGetDeviceInfo(device.get(), 0x4037 /*CL_DEVICE_TOPOLOGY_AMD*/, sizeof(t), &t, NULL) ==
+                //     CL_SUCCESS) {
+                //     // NOTE" Till we can upgrade to opencl 2.x, there's no way to determine
+                //     // the bus domain id. So we plug in a 0!
+                //     ostringstream s;
+                //     s << "0000:" << setfill('0') << setw(2) << hex << (unsigned int)(t[21]) << ":" << setw(2)
+                //       << (unsigned int)(t[22]) << "." << (unsigned int)(t[23]);
+                //     uniqueId = s.str();
+                // }
+                std::ostringstream s;
+                s << "GPU:" << setfill('0') << setw(2) << hex << (pIdx + dIdx);
+                uniqueId = s.str();
             } else if (clDeviceType == DeviceTypeEnum::Gpu && platformType == ClPlatformTypeEnum::Intel) {
                 ostringstream s;
                 s << "Intel GPU " << pIdx << "." << dIdx;

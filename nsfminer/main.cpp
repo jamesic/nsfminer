@@ -8,10 +8,8 @@
  * this file.
  */
 
-#if defined(__linux__)
 #include <execinfo.h>
 #include <pwd.h>
-#endif
 
 #include <algorithm>
 #include <condition_variable>
@@ -111,14 +109,14 @@ static void headers(vector<string>& h, bool color) {
     ss << white << "3rd Party: " << OPENSSL_VERSION_TEXT;
     h.push_back(ss.str());
     char username[64];
-#if defined(__linux__)
-    uid_t uid = geteuid();
-    struct passwd* pw = getpwuid(uid);
-    strcpy(username, pw ? pw->pw_name : "unknown");
-#else
+#if defined(_WIN32)
     DWORD size = sizeof(username) - 1;
     if (!GetUserName(username, &size))
         strcpy(username, "unknown");
+#else
+    uid_t uid = geteuid();
+    struct passwd* pw = getpwuid(uid);
+    strcpy(username, pw ? pw->pw_name : "unknown");
 #endif
     ss.str("");
     ss << (color ? EthWhite : "") << "Running as user: " << username;

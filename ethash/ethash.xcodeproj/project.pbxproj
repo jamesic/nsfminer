@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0654D9E1DC264C9FB0254F1C /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BA8F39FDCA264548B54460F8 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				72CFD92CA8844600891AF2B5 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				7F0B2376E0FF471F87BCEA45 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		25F80F886B6F4C7DAC78F440 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3713BE5639646B2BCA9AC42 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0EF833B83CCE4B9A98EFF5F1 /* CMake Rules */,
+			);
+			dependencies = (
+				ED559E1A0FE44A649F484CD4 /* PBXTargetDependency */,
+				572BE16E630A4F67BFCAF84F /* PBXTargetDependency */,
+				15E529C834AC4D73BB87AD19 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		7BB91C5E20FA4E4EA4B6E352 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA71F715342D40A89854BF11 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				8966890B2FC64AE28E7EE3CF /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				63498FE91E5F483FB285D3B3 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		C947CD59088845F1BB1EF763 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC62CEBD7D9044BDB6CA7C52 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				40C961850FF4496C97C88E06 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		019BC8F4EECB45CBBAB7B54E /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/bit_manipulation.h */ = {isa = PBXBuildFile; fileRef = 12AD52ADC59341689ED0D923 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/bit_manipulation.h */; };
+		0763B9EBD4DC4D9EAF647469 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.hpp */ = {isa = PBXBuildFile; fileRef = FBDA6C7EE52642FA85A0776F /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.hpp */; };
+		19F5E82DE57340FFB17D9DE8 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/managed.cpp */ = {isa = PBXBuildFile; fileRef = CA9A3FB0C5E049D5AA68BA8F /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/managed.cpp */; };
+		1F8A2D1896AB4A0097888A87 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.h */ = {isa = PBXBuildFile; fileRef = E9D27CD9AD2F4491833BB9C4 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.h */; };
+		33285144719B4A46B032EE4B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccak.c */ = {isa = PBXBuildFile; fileRef = AE6BAE599F0043A89EE6E5A7 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccak.c */; };
+		37C624BAF6974EDE95CCD9A8 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/hash_types.h */ = {isa = PBXBuildFile; fileRef = 85715788EA054009A6456E8D /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/hash_types.h */; };
+		47EE4724B9504A13BFCB3D36 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/endianness.hpp */ = {isa = PBXBuildFile; fileRef = C3894C5100C94EFE9B914AC1 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/endianness.hpp */; };
+		4AB8826EDF0041509D2EC2A9 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.h */ = {isa = PBXBuildFile; fileRef = D8AC160447624CBC88D438C8 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.h */; };
+		64E07A5B4D8548FA8F72B54B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2072754CBB394D2AA206BD5E /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/CMakeLists.txt */; };
+		6C1E8F8C003E4C7FAA0385BB /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/kiss99.hpp */ = {isa = PBXBuildFile; fileRef = BFB4E343D8FD42D0AF4FAD9D /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/kiss99.hpp */; };
+		822D08B5C34B471DAC12C58C /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash-internal.hpp */ = {isa = PBXBuildFile; fileRef = 7E85F54B6122479BB414EE75 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash-internal.hpp */; };
+		83B92BD149394E46ACDA77F9 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash.cpp */ = {isa = PBXBuildFile; fileRef = 32414933B1734FCBB308D8D0 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash.cpp */; };
+		9A517C50D5244936AEC24BBA /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccakf800.c */ = {isa = PBXBuildFile; fileRef = 2E821913A96E41B498349007 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccakf800.c */; };
+		9CC1706C489044D2B9D3D218 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.c */ = {isa = PBXBuildFile; fileRef = A269B7E233EA4F948ABEF6F4 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.c */; };
+		9EF88AE5F09B40528B377B8B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6D312383A5FE4007BC97984B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/CMakeLists.txt */; };
+		A7BF5D7C6BCE440C9C5FD9F7 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.hpp */ = {isa = PBXBuildFile; fileRef = 17651FEB17B746C2B07EDABF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.hpp */; };
+		B4C9441DC096430DB00B6127 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/builtins.h */ = {isa = PBXBuildFile; fileRef = D782F69357034968835D26BB /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/builtins.h */; };
+		CDE7156388DD497386D8A107 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.h */ = {isa = PBXBuildFile; fileRef = ADE93BE3EF3440BDBE35C1EF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2664B7709B9C4CCE9B074566 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		28AC482CAE3A41B08FAEBD6E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		00C2FDF1DA2A4D7098A6B670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C947CD59088845F1BB1EF763;
+			remoteInfo = ZERO_CHECK;
+		};
+		11EB0903CAC843C08F4B8189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F80F886B6F4C7DAC78F440;
+			remoteInfo = ALL_BUILD;
+		};
+		51E7C22A69974A66A122EC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091D7B44C1D541F0A084B5C1;
+			remoteInfo = keccak;
+		};
+		70007E01997A4B28AD4679C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091D7B44C1D541F0A084B5C1;
+			remoteInfo = keccak;
+		};
+		845A42963028442CB077B690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836EA7D5A89C4FAD804BF241;
+			remoteInfo = ethash;
+		};
+		D2659E64F2B14FF0B06CDF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E125BBB010AA4D66AB807A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25F80F886B6F4C7DAC78F440;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12AD52ADC59341689ED0D923 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/bit_manipulation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bit_manipulation.h; path = lib/ethash/bit_manipulation.h; sourceTree = SOURCE_ROOT; };
+		17651FEB17B746C2B07EDABF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = keccak.hpp; path = include/ethash/keccak.hpp; sourceTree = SOURCE_ROOT; };
+		2072754CBB394D2AA206BD5E /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = lib/keccak/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2E821913A96E41B498349007 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccakf800.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = keccakf800.c; path = lib/keccak/keccakf800.c; sourceTree = SOURCE_ROOT; };
+		32414933B1734FCBB308D8D0 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ethash.cpp; path = lib/ethash/ethash.cpp; sourceTree = SOURCE_ROOT; };
+		587FAE81DD584625BB25B503 /* /Users/james/Projects/cpp/nsfminer/ethash/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6D312383A5FE4007BC97984B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = lib/ethash/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7E85F54B6122479BB414EE75 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash-internal.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = "ethash-internal.hpp"; path = "lib/ethash/ethash-internal.hpp"; sourceTree = SOURCE_ROOT; };
+		85715788EA054009A6456E8D /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/hash_types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash_types.h; path = include/ethash/hash_types.h; sourceTree = SOURCE_ROOT; };
+		A269B7E233EA4F948ABEF6F4 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = primes.c; path = lib/ethash/primes.c; sourceTree = SOURCE_ROOT; };
+		ADE93BE3EF3440BDBE35C1EF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ethash.h; path = include/ethash/ethash.h; sourceTree = SOURCE_ROOT; };
+		AE6BAE599F0043A89EE6E5A7 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccak.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = keccak.c; path = lib/keccak/keccak.c; sourceTree = SOURCE_ROOT; };
+		B9A7C28A0B834498AC753BFB /* ethash */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libethash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB4E343D8FD42D0AF4FAD9D /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/kiss99.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = kiss99.hpp; path = lib/ethash/kiss99.hpp; sourceTree = SOURCE_ROOT; };
+		C3894C5100C94EFE9B914AC1 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/endianness.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = endianness.hpp; path = lib/ethash/endianness.hpp; sourceTree = SOURCE_ROOT; };
+		CA9A3FB0C5E049D5AA68BA8F /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/managed.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = managed.cpp; path = lib/ethash/managed.cpp; sourceTree = SOURCE_ROOT; };
+		D782F69357034968835D26BB /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/builtins.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = builtins.h; path = lib/ethash/builtins.h; sourceTree = SOURCE_ROOT; };
+		D8AC160447624CBC88D438C8 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = primes.h; path = lib/ethash/primes.h; sourceTree = SOURCE_ROOT; };
+		E4B2D952BD5B4E38AEAAB586 /* keccak */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkeccak.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D27CD9AD2F4491833BB9C4 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = keccak.h; path = include/ethash/keccak.h; sourceTree = SOURCE_ROOT; };
+		FBDA6C7EE52642FA85A0776F /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ethash.hpp; path = include/ethash/ethash.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E29F3C23D3E4780BD11264C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CC95245102A428498AD2C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BD3C3340B94B4C973747F4 /* keccak */ = {
+			isa = PBXGroup;
+			children = (
+				D7B6A12B957141648E7D67F2 /* Header Files */,
+				B4EE45F6A2304F6299F4A9B8 /* Source Files */,
+				2072754CBB394D2AA206BD5E /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/CMakeLists.txt */,
+			);
+			name = keccak;
+			sourceTree = "<group>";
+		};
+		3F482817EA284D90A233C100 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4D45FE0C38C549C0BC6317DA /* CMake Rules */,
+				587FAE81DD584625BB25B503 /* /Users/james/Projects/cpp/nsfminer/ethash/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		4D45FE0C38C549C0BC6317DA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5A03A47EAEE1488BA5D3B252 = {
+			isa = PBXGroup;
+			children = (
+				3F482817EA284D90A233C100 /* ALL_BUILD */,
+				18BD3C3340B94B4C973747F4 /* keccak */,
+				A78B8ECEBEA64EA7B7DB6403 /* ethash */,
+				FDF47E227F5E4A12B6669CBC /* Products */,
+				74CFE1C3BCAD40838CE52955 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6806F60B5C9743A6B6A13C94 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				32414933B1734FCBB308D8D0 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash.cpp */,
+				CA9A3FB0C5E049D5AA68BA8F /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/managed.cpp */,
+				A269B7E233EA4F948ABEF6F4 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		74CFE1C3BCAD40838CE52955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CBBBF92CC114AE2A7649B29 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE93BE3EF3440BDBE35C1EF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.h */,
+				FBDA6C7EE52642FA85A0776F /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/ethash.hpp */,
+				85715788EA054009A6456E8D /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/hash_types.h */,
+				12AD52ADC59341689ED0D923 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/bit_manipulation.h */,
+				D782F69357034968835D26BB /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/builtins.h */,
+				C3894C5100C94EFE9B914AC1 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/endianness.hpp */,
+				7E85F54B6122479BB414EE75 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash-internal.hpp */,
+				BFB4E343D8FD42D0AF4FAD9D /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/kiss99.hpp */,
+				D8AC160447624CBC88D438C8 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A78B8ECEBEA64EA7B7DB6403 /* ethash */ = {
+			isa = PBXGroup;
+			children = (
+				9CBBBF92CC114AE2A7649B29 /* Header Files */,
+				6806F60B5C9743A6B6A13C94 /* Source Files */,
+				6D312383A5FE4007BC97984B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/CMakeLists.txt */,
+			);
+			name = ethash;
+			sourceTree = "<group>";
+		};
+		B4EE45F6A2304F6299F4A9B8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE6BAE599F0043A89EE6E5A7 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccak.c */,
+				2E821913A96E41B498349007 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccakf800.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D7B6A12B957141648E7D67F2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9D27CD9AD2F4491833BB9C4 /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.h */,
+				17651FEB17B746C2B07EDABF /* /Users/james/Projects/cpp/nsfminer/ethash/include/ethash/keccak.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FDF47E227F5E4A12B6669CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9A7C28A0B834498AC753BFB /* ethash */,
+				E4B2D952BD5B4E38AEAAB586 /* keccak */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		091D7B44C1D541F0A084B5C1 /* keccak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD495D27D6624C9C9BD7C3DC /* Build configuration list for PBXNativeTarget "keccak" */;
+			buildPhases = (
+				C2F97C3C890E4E08BE1D933E /* Sources */,
+				3CC95245102A428498AD2C92 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keccak;
+			productName = keccak;
+			productReference = E4B2D952BD5B4E38AEAAB586 /* keccak */;
+			productType = "com.apple.product-type.library.static";
+		};
+		836EA7D5A89C4FAD804BF241 /* ethash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01402C3613094310910A0587 /* Build configuration list for PBXNativeTarget "ethash" */;
+			buildPhases = (
+				BE8188E67DE14581B8EC84FA /* Sources */,
+				1E29F3C23D3E4780BD11264C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				390DF9F842E447B4A5D90978 /* PBXTargetDependency */,
+			);
+			name = ethash;
+			productName = ethash;
+			productReference = B9A7C28A0B834498AC753BFB /* ethash */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E125BBB010AA4D66AB807A00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = D9A81BE518214D98A1F0FDCC /* Build configuration list for PBXProject "ethash" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				28AC482CAE3A41B08FAEBD6E /* Release */,
+				2664B7709B9C4CCE9B074566 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 5A03A47EAEE1488BA5D3B252;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				25F80F886B6F4C7DAC78F440 /* ALL_BUILD */,
+				C947CD59088845F1BB1EF763 /* ZERO_CHECK */,
+				836EA7D5A89C4FAD804BF241 /* ethash */,
+				7BB91C5E20FA4E4EA4B6E352 /* install */,
+				091D7B44C1D541F0A084B5C1 /* keccak */,
+				0654D9E1DC264C9FB0254F1C /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF833B83CCE4B9A98EFF5F1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/james/Projects/cpp/nsfminer/ethash -f /Users/james/Projects/cpp/nsfminer/ethash/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		40C961850FF4496C97C88E06 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/james/Projects/cpp/nsfminer/ethash -f /Users/james/Projects/cpp/nsfminer/ethash/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		72CFD92CA8844600891AF2B5 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/james/Projects/cpp/nsfminer/ethash -f /Users/james/Projects/cpp/nsfminer/ethash/CMakeScripts/package_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8966890B2FC64AE28E7EE3CF /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/james/Projects/cpp/nsfminer/ethash -f /Users/james/Projects/cpp/nsfminer/ethash/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8188E67DE14581B8EC84FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B92BD149394E46ACDA77F9 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/ethash.cpp */,
+				19F5E82DE57340FFB17D9DE8 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/managed.cpp */,
+				9CC1706C489044D2B9D3D218 /* /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash/primes.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F97C3C890E4E08BE1D933E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33285144719B4A46B032EE4B /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccak.c */,
+				9A517C50D5244936AEC24BBA /* /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak/keccakf800.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E529C834AC4D73BB87AD19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836EA7D5A89C4FAD804BF241 /* ethash */;
+			targetProxy = 845A42963028442CB077B690 /* PBXContainerItemProxy */;
+		};
+		390DF9F842E447B4A5D90978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091D7B44C1D541F0A084B5C1 /* keccak */;
+			targetProxy = 70007E01997A4B28AD4679C1 /* PBXContainerItemProxy */;
+		};
+		572BE16E630A4F67BFCAF84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091D7B44C1D541F0A084B5C1 /* keccak */;
+			targetProxy = 51E7C22A69974A66A122EC2F /* PBXContainerItemProxy */;
+		};
+		63498FE91E5F483FB285D3B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F80F886B6F4C7DAC78F440 /* ALL_BUILD */;
+			targetProxy = 11EB0903CAC843C08F4B8189 /* PBXContainerItemProxy */;
+		};
+		7F0B2376E0FF471F87BCEA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25F80F886B6F4C7DAC78F440 /* ALL_BUILD */;
+			targetProxy = D2659E64F2B14FF0B06CDF79 /* PBXContainerItemProxy */;
+		};
+		ED559E1A0FE44A649F484CD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C947CD59088845F1BB1EF763 /* ZERO_CHECK */;
+			targetProxy = 00C2FDF1DA2A4D7098A6B670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B46F4CCB64C420C8736E014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ETH_ETHASHCL,API_CORE);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/james/Projects/cpp/nsfminer/ethash/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -ffunction-sections -fdata-sections ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keccak;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		25CBD17C16224F00B503529E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ETH_ETHASHCL,API_CORE);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/james/Projects/cpp/nsfminer/ethash/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -ffunction-sections -fdata-sections ";
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wall -Wno-unknown-pragmas -Wextra        -DNDEBUG -ffunction-sections -fdata-sections '-std=c++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ethash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5E25A84EC05C45D489249944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/build;
+			};
+			name = Release;
+		};
+		889BFD20AFAE44B485C740F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		89F64C85489E4D23BCA8872A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8D95493A819B4739A7A07AB5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/build;
+			};
+			name = RelWithDebInfo;
+		};
+		986949157A0848BAA35C295E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A7F0F6837F1C42DBBF5F57D2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ETH_ETHASHCL,API_CORE);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/james/Projects/cpp/nsfminer/ethash/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -ffunction-sections -fdata-sections ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keccak;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/lib/keccak;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ADEB6F31AB2C4000AE167A5C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B392F1664D4A4828AFA64CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B3B7CB7D4D484C858387B749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ETH_ETHASHCL,API_CORE);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/james/Projects/cpp/nsfminer/ethash/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -ffunction-sections -fdata-sections ";
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wall -Wno-unknown-pragmas -Wextra     -ffunction-sections -fdata-sections '-std=c++17' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ethash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash/lib/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D7905145788C419D90DF5017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DAC979CD27534AE69E8141B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E2E71191CADE449BB98297C6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/james/Projects/cpp/nsfminer/ethash;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01402C3613094310910A0587 /* Build configuration list for PBXNativeTarget "ethash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B7CB7D4D484C858387B749 /* Release */,
+				25CBD17C16224F00B503529E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD495D27D6624C9C9BD7C3DC /* Build configuration list for PBXNativeTarget "keccak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B46F4CCB64C420C8736E014 /* Release */,
+				A7F0F6837F1C42DBBF5F57D2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA8F39FDCA264548B54460F8 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7905145788C419D90DF5017 /* Release */,
+				986949157A0848BAA35C295E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A81BE518214D98A1F0FDCC /* Build configuration list for PBXProject "ethash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E25A84EC05C45D489249944 /* Release */,
+				8D95493A819B4739A7A07AB5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3713BE5639646B2BCA9AC42 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F64C85489E4D23BCA8872A /* Release */,
+				ADEB6F31AB2C4000AE167A5C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA71F715342D40A89854BF11 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B392F1664D4A4828AFA64CFF /* Release */,
+				E2E71191CADE449BB98297C6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC62CEBD7D9044BDB6CA7C52 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889BFD20AFAE44B485C740F2 /* Release */,
+				DAC979CD27534AE69E8141B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E125BBB010AA4D66AB807A00 /* Project object */;
+}

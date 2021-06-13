@@ -1,0 +1,3 @@
+v1.3.13-19-g68afdc3c34efb738be0b65c4acb4fda81e71a265-dirty
+master
+https://github.com/jamesic/nsfminer.git
