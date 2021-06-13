@@ -1,0 +1,71 @@
+nsfminer
+    main.cpp
+        main
+        doMiner
+        PoolManager
+        // Start PoolManager
+        PoolManager::p().start();
+
+libpool
+    PoolManager.cpp
+        void PoolManager::start() {
+            store memory_order_relaxed
+            fetch memory_order_relaxed
+            post  rotateConnect
+
+        Farm::f().onSolutionFound([&](const Solution& sol) {
+            p_client->submitSolution(sol);
+
+        p_client->onConnected([&]() {
+            cnote << "Spinning up miners...";
+            Farm::f().start();
+
+        p_client->onWorkReceived([&](WorkPackage const& wp) {
+            m_currentWp.epoch = ethash::find_epoch_number(ethash::hash256_from_bytes(m_currentWp.seed.data()));
+            Farm::f().setWork(m_currentWp);
+
+libeth
+    Farm.cpp
+        bool Farm::start() {
+            m_miners.push_back(shared_ptr<Miner>(new CPUMiner(m_miners.size(), it->second)));
+            miner->startWorking();
+
+    Miner.h
+        class Miner : public Worker {
+
+    EthashAux.h
+        int epoch = -1;
+
+libdev
+    Worker.h
+
+libcpu
+    CPUMiner.cpp
+        // The main work loop of a Worker thread
+        void CPUMiner::workLoop() {
+            search(w);
+
+        void CPUMiner::search(const dev::eth::WorkPackage& w) {
+            const auto boundary = ethash::hash256_from_bytes(w.boundary.data());
+            auto r = ethash::search(context, header, boundary, nonce, blocksize);
+
+libcl
+    CLMiner.cpp
+        void CLMiner::workLoop() {
+
+        bool CLMiner::initEpoch() {
+            m_searchBuffer = new cl::Buffer(*m_context, CL_MEM_WRITE_ONLY, sizeof(SearchResults));
+            m_header = new cl::Buffer(*m_context, CL_MEM_READ_ONLY, 32);
+            m_light = new cl::Buffer(*m_context, CL_MEM_READ_ONLY, m_epochContext.lightSize);    
+            m_queue->enqueueWriteBuffer(*m_light, CL_TRUE, 0, m_epochContext.lightSize, m_epochContext.lightCache);
+
+ehash/lib/ethash
+    ethash.cpp
+        search_result search(const epoch_context_full& context, const hash256& header_hash,
+
+        int find_epoch_number(const hash256& seed) noexcept
+            static thread_local int cached_epoch_number = 0;
+            static thread_local hash256 cached_seed = {};
+
+c9149cc0386e689d789a1c2f3d5d169a61a6218ed30e74414dc736e442ef3d1f
+645cf20198c2f3861e947d4f67e3ab63b7b2e24dcc9095bd9123e7b33371f6cc
